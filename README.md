@@ -12,3 +12,7 @@ A responsive restaurant/cafe landing page built with HTML, CSS, and JavaScript.
 
 ## Tech Used
 HTML, CSS, JavaScript
+
+## Live website
+
+https://y7s21.github.io/restaurant-cafe-website/
