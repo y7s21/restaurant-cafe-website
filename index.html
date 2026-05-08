@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Cozy Corner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a href="#home" class="brand" aria-label="The Cozy Corner home">
+        <span class="brand-icon">☕</span>
+        <span>The Cozy Corner</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <div class="nav-links">
+        <button data-target="home">Home</button>
+        <button data-target="about">About</button>
+        <button data-target="menu">Menu</button>
+        <button data-target="gallery">Gallery</button>
+        <button data-target="reservation">Reserve</button>
+        <button data-target="contact">Contact</button>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img src="images/mainimpg.jpg" alt="Cozy cafe interior" />
+      <div class="overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <h1>The Cozy Corner</h1>
+      <p>Fresh coffee, warm meals, and a cozy place to relax.</p>
+      <div class="hero-buttons">
+        <button class="btn primary" data-target="menu">View Menu</button>
+        <button class="btn light" data-target="reservation">Reserve a Table</button>
+        <button class="btn outline" data-target="menu">Order Now</button>
+      </div>
+    </div>
+
+    <button class="down-btn" data-target="about" aria-label="Scroll to about section">⌄</button>
+  </section>
+
+  <section id="about" class="section about-section">
+    <div class="container two-column">
+      <div>
+        <h2>Our Story</h2>
+        <p>We are a local cafe serving fresh drinks, desserts, and homemade meals in a comfortable atmosphere.</p>
+        <p>Founded in 2020, The Cozy Corner has become a beloved gathering place for coffee enthusiasts and food lovers. Our passion is creating memorable experiences through exceptional service and quality ingredients.</p>
+        <p>Every dish is prepared with love, using locally sourced ingredients whenever possible. Whether you're here for a quick coffee or a leisurely meal, we're committed to making you feel at home.</p>
+      </div>
+      <div class="about-images">
+        <img src="images/reasturan.jpg" alt="Cafe interior" />
+        <img class="offset" src="images/coffe.jpg" alt="Coffee" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section white-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Popular Dishes</h2>
+        <p>Customer favorites you must try</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="dish-card">
+          <img src="images/food1.jpg" alt="Chicken Burger" />
+          <div class="card-content">
+            <div class="stars">★★★★★</div>
+            <h3>Chicken Burger</h3>
+            <p>Juicy chicken patty with fresh veggies and special sauce</p>
+            <strong>$12.99</strong>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <img src="images/food2.jpg" alt="Iced Coffee" />
+          <div class="card-content">
+            <div class="stars">★★★★★</div>
+            <h3>Iced Coffee</h3>
+            <p>Perfectly brewed cold coffee with ice and cream</p>
+            <strong>$4.50</strong>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <img src="images/food3.jpg" alt="Chocolate Cake" />
+          <div class="card-content">
+            <div class="stars">★★★★★</div>
+            <h3>Chocolate Cake</h3>
+            <p>Rich chocolate layers with creamy frosting</p>
+            <strong>$6.99</strong>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <img src="images/food4.jpg" alt="English Breakfast" />
+          <div class="card-content">
+            <div class="stars">★★★★★</div>
+            <h3>Full Breakfast</h3>
+            <p>Eggs, sausages, beans, toast and more</p>
+            <strong>$14.99</strong>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="section menu-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Menu</h2>
+        <p>Explore our delicious offerings</p>
+      </div>
+
+      <div class="menu-category">
+        <h3>Coffee</h3>
+        <div class="menu-grid">
+          <div class="menu-item"><div><h4>Espresso</h4><p>Rich and bold Italian-style coffee</p></div><span>$2.50</span></div>
+          <div class="menu-item"><div><h4>Latte</h4><p>Espresso with steamed milk and smooth foam</p></div><span>$3.50</span></div>
+          <div class="menu-item"><div><h4>Cappuccino</h4><p>Perfect balance of espresso, milk, and foam</p></div><span>$3.50</span></div>
+          <div class="menu-item"><div><h4>Americano</h4><p>Espresso diluted with hot water</p></div><span>$2.99</span></div>
+          <div class="menu-item"><div><h4>Mocha</h4><p>Espresso with chocolate and steamed milk</p></div><span>$4.25</span></div>
+          <div class="menu-item"><div><h4>Flat White</h4><p>Velvety microfoam over espresso</p></div><span>$3.75</span></div>
+        </div>
+      </div>
+
+      <div class="menu-category">
+        <h3>Cold Drinks</h3>
+        <div class="menu-grid">
+          <div class="menu-item"><div><h4>Iced Coffee</h4><p>Chilled coffee served over ice</p></div><span>$4.50</span></div>
+          <div class="menu-item"><div><h4>Iced Latte</h4><p>Cold milk poured over espresso and ice</p></div><span>$4.99</span></div>
+          <div class="menu-item"><div><h4>Fresh Orange Juice</h4><p>Freshly squeezed oranges</p></div><span>$4.50</span></div>
+          <div class="menu-item"><div><h4>Lemonade</h4><p>Homemade fresh lemonade</p></div><span>$3.99</span></div>
+        </div>
+      </div>
+
+      <div class="menu-category">
+        <h3>Breakfast</h3>
+        <div class="menu-grid">
+          <div class="menu-item"><div><h4>Full English Breakfast</h4><p>Eggs, sausages, bacon, beans, toast, mushrooms</p></div><span>$14.99</span></div>
+          <div class="menu-item"><div><h4>Pancakes</h4><p>Stack of fluffy pancakes with maple syrup</p></div><span>$8.99</span></div>
+          <div class="menu-item"><div><h4>Avocado Toast</h4><p>Smashed avocado on sourdough with poached egg</p></div><span>$9.99</span></div>
+          <div class="menu-item"><div><h4>French Toast</h4><p>Golden toast with berries and whipped cream</p></div><span>$9.50</span></div>
+        </div>
+      </div>
+
+      <div class="menu-category">
+        <h3>Main Dishes</h3>
+        <div class="menu-grid">
+          <div class="menu-item"><div><h4>Chicken Burger</h4><p>Grilled chicken with lettuce, tomato, and mayo</p></div><span>$12.99</span></div>
+          <div class="menu-item"><div><h4>Classic Burger</h4><p>Beef patty with cheese and special sauce</p></div><span>$11.99</span></div>
+          <div class="menu-item"><div><h4>Club Sandwich</h4><p>Triple-decker with chicken, bacon, and veggies</p></div><span>$10.99</span></div>
+          <div class="menu-item"><div><h4>Caesar Salad</h4><p>Fresh romaine with parmesan and croutons</p></div><span>$9.99</span></div>
+          <div class="menu-item"><div><h4>Pasta Carbonara</h4><p>Creamy pasta with bacon and parmesan</p></div><span>$13.99</span></div>
+          <div class="menu-item"><div><h4>Grilled Salmon</h4><p>Fresh salmon with vegetables and lemon</p></div><span>$16.99</span></div>
+        </div>
+      </div>
+
+      <div class="menu-category">
+        <h3>Desserts</h3>
+        <div class="menu-grid">
+          <div class="menu-item"><div><h4>Chocolate Cake</h4><p>Rich chocolate layers with ganache</p></div><span>$6.99</span></div>
+          <div class="menu-item"><div><h4>Cheesecake</h4><p>Creamy New York style cheesecake</p></div><span>$6.50</span></div>
+          <div class="menu-item"><div><h4>Tiramisu</h4><p>Italian coffee-flavored dessert</p></div><span>$7.50</span></div>
+          <div class="menu-item"><div><h4>Ice Cream</h4><p>3 scoops of your choice</p></div><span>$5.50</span></div>
+        </div>
+      </div>
+
+      <div class="menu-category no-margin">
+        <h3>Snacks</h3>
+        <div class="menu-grid">
+          <div class="menu-item"><div><h4>French Fries</h4><p>Crispy golden fries</p></div><span>$4.50</span></div>
+          <div class="menu-item"><div><h4>Chicken Wings</h4><p>Spicy or BBQ sauce</p></div><span>$8.99</span></div>
+          <div class="menu-item"><div><h4>Nachos</h4><p>Tortilla chips with cheese and jalapeños</p></div><span>$7.50</span></div>
+          <div class="menu-item"><div><h4>Onion Rings</h4><p>Crispy breaded onion rings</p></div><span>$5.50</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section white-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Gallery</h2>
+        <p>A glimpse of our cafe atmosphere</p>
+      </div>
+
+      <div class="gallery-grid">
+        <img src="images/mainimpg.jpg" alt="Cafe interior" />
+        <img src="images/reasturan.jpg" alt="Cafe with plants" />
+        <img src="images/food1.jpg" alt="Latte art" />
+        <img src="images/food2.jpg" alt="Burger" />
+        <img src="images/food3.jpg" alt="Chocolate cake" />
+        <img src="images/food4.jpg" alt="English Breakfast" />
+        <img src="images/coffe.jpg" alt="Salad" />
+        <img src="images/inside.jpg" alt="Sandwich" />
+      </div>
+    </div>
+  </section>
+
+  <section id="reservation" class="section reservation-section">
+    <div class="container narrow">
+      <div class="section-title">
+        <h2>Reserve a Table</h2>
+        <p>Book your table in advance</p>
+      </div>
+
+      <form id="reservationForm" class="reservation-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input id="name" name="name" type="text" required placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input id="phone" name="phone" type="tel" required placeholder="+1 234 567 8900" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Date *</label>
+            <input id="date" name="date" type="date" required />
+          </div>
+          <div class="form-group">
+            <label for="time">Time *</label>
+            <input id="time" name="time" type="time" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="guests">Number of People *</label>
+          <select id="guests" name="guests">
+            <option value="1">1 Person</option>
+            <option value="2" selected>2 People</option>
+            <option value="3">3 People</option>
+            <option value="4">4 People</option>
+            <option value="5">5 People</option>
+            <option value="6">6 People</option>
+            <option value="7">7 People</option>
+            <option value="8">8+ People</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Special Requests</label>
+          <textarea id="message" name="message" rows="4" placeholder="Any special requests or dietary requirements?"></textarea>
+        </div>
+
+        <button class="btn submit-btn" type="submit">Submit Reservation</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section white-section">
+    <div class="container narrow">
+      <div class="section-title">
+        <h2>Opening Hours</h2>
+        <p>We're here to serve you</p>
+      </div>
+
+      <div class="hours-box">
+        <div class="hours-row"><span>🕒 Monday - Friday</span><strong>09:00 - 22:00</strong></div>
+        <div class="hours-row"><span>🕒 Saturday</span><strong>10:00 - 23:00</strong></div>
+        <div class="hours-row last"><span>🕒 Sunday</span><strong>10:00 - 23:00</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us</p>
+      </div>
+
+      <div class="two-column contact-grid">
+        <div class="contact-info">
+          <div class="contact-item"><span>📍</span><div><h3>Address</h3><p>123 Main Street, Downtown<br>New York, NY 10001</p></div></div>
+          <div class="contact-item"><span>📞</span><div><h3>Phone</h3><p>+1 (555) 123-4567</p></div></div>
+          <div class="contact-item"><span>✉️</span><div><h3>Email</h3><p>info@cozycorner.com</p></div></div>
+          <div class="contact-item"><span>💬</span><div><h3>WhatsApp</h3><a href="https://wa.me/15551234567" target="_blank" rel="noopener noreferrer">Chat with us on WhatsApp</a></div></div>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+          </div>
+        </div>
+
+        <div class="map-box">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968459391!3d40.74844097932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1629814400000!5m2!1sen!2sus" width="100%" height="100%" style="border:0" allowfullscreen="" loading="lazy" title="Google Maps Location"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand"><span>☕</span><strong>The Cozy Corner</strong></div>
+      <p>© 2026 The Cozy Corner. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
